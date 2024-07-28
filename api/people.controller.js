@@ -15,6 +15,9 @@ class PeopleController {
       res.status(500).json({ success: false,error: e.message });
     }
   } 
+  static async hi(req, res, next) {
+   return "hi"
+  } 
 }
 
 module.exports = PeopleController;
