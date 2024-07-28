@@ -11,6 +11,6 @@ app.use(express.json())
 app.use("/api/people", people)
 
 app.use("*", (req, res) =>
-  res.status(404).json({ error: "not yeah found" }))
+  res.status(404).json({ error: "Server Not Found" }))
 
 module.exports= app;
